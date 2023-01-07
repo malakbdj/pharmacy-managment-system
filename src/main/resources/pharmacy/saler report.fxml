@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmacy.theardController">
+   <children>
+      <Pane layoutY="149.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+         <children>
+            <Label layoutX="91.0" layoutY="14.0" prefHeight="20.0" prefWidth="102.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="200.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+         <children>
+            <Label layoutX="89.0" layoutY="13.0" prefHeight="20.0" prefWidth="65.0" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="251.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+         <children>
+            <Label layoutX="89.0" layoutY="14.0" prefHeight="20.0" prefWidth="58.0" text="Reports" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="302.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+         <children>
+            <Label layoutX="85.0" layoutY="13.0" prefHeight="20.0" prefWidth="102.0" text="Configuration" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="353.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+         <children>
+            <Label layoutX="44.0" layoutY="11.0" prefHeight="20.0" prefWidth="161.0" text="Customer Management" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <StackedBarChart layoutX="436.0" layoutY="136.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <Label layoutX="280.0" layoutY="73.0" prefHeight="34.0" prefWidth="93.0" text=" report&gt;" textFill="#737373">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Pane id="nav_bar" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E;">
+         <children>
+            <Label layoutX="78.0" layoutY="2.0" style="-fx-font-family: Poppins;" text="pharmagest" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="58.0" layoutX="9.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ee.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="374.0" layoutY="73.0" prefHeight="34.0" prefWidth="140.0" text="saler report :">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Pane layoutX="256.0" prefHeight="46.0" prefWidth="791.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

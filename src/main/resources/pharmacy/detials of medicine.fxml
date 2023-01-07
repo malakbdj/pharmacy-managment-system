@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmacy.PrimaryController">
+   <children>
+      <Pane id="nav_bar" prefHeight="60.0" prefWidth="256.0" style="-fx-background-color: #1D242E;">
+         <children>
+            <Label layoutX="78.0" layoutY="5.0" style="-fx-font-family: Poppins;" text="pharmagest" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="58.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ee.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="58.0" prefHeight="662.0" prefWidth="1280.0" style="-fx-border-image-width: black; -fx-border-color: black;">
+         <children>
+            <Pane layoutY="56.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+               <children>
+                  <Label layoutX="91.0" layoutY="14.0" prefHeight="20.0" prefWidth="102.0" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="107.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+               <children>
+                  <Label layoutX="89.0" layoutY="13.0" prefHeight="20.0" prefWidth="65.0" text="Inventory" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="158.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+               <children>
+                  <Label layoutX="89.0" layoutY="14.0" prefHeight="20.0" prefWidth="58.0" text="Reports" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="209.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+               <children>
+                  <Label layoutX="85.0" layoutY="13.0" prefHeight="20.0" prefWidth="102.0" text="Configuration" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutY="260.0" prefHeight="46.0" prefWidth="256.0" style="-fx-background-color: #1D242E; -fx-background-radius: 0 20 20 0;" styleClass="border-radius: 0px 20px 20px 0px;">
+               <children>
+                  <Label layoutX="44.0" layoutY="11.0" prefHeight="20.0" prefWidth="161.0" text="Customer Management" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="313.0" layoutY="32.0" prefHeight="32.0" prefWidth="94.0" text="Invontry " textFill="#a6a6a6">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <TableView layoutX="339.0" layoutY="158.0" prefHeight="109.0" prefWidth="326.0">
+              <columns>
+                <TableColumn prefWidth="325.20001220703125" text="Medicine" />
+              </columns>
+            </TableView>
+            <TableView layoutX="858.0" layoutY="158.0" prefHeight="109.0" prefWidth="326.0">
+               <columns>
+                  <TableColumn prefWidth="325.20001220703125" text="Inventory in Qty" />
+               </columns>
+            </TableView>
+            <TableView layoutX="339.0" layoutY="306.0" prefHeight="109.0" prefWidth="843.0">
+               <columns>
+                  <TableColumn prefWidth="842.1999816894531" text="How to use" />
+               </columns>
+            </TableView>
+            <TableView layoutX="341.0" layoutY="453.0" prefHeight="109.0" prefWidth="843.0">
+               <columns>
+                  <TableColumn prefWidth="842.2000122070312" text="Side Effects" />
+               </columns>
+            </TableView>
+            <Label layoutX="339.0" layoutY="608.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: red; -fx-background-radius: 5;" text=" Delete medicine" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="1059.0" layoutY="71.0" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: blue; -fx-background-radius: 5;" text="       Edit detials" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="429.0" layoutY="32.0" prefHeight="32.0" prefWidth="161.0" text="list of medicine" textFill="#999999">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="618.0" layoutY="32.0" prefHeight="32.0" prefWidth="102.0" text="Invontry ">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="407.0" layoutY="32.0" prefHeight="32.0" prefWidth="13.0" text="&gt;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="597.0" layoutY="32.0" prefHeight="32.0" prefWidth="13.0" text="&gt;">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="346.0" layoutY="76.0" text="List of medicines available for sales" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
